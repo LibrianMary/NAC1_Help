@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context=".DataScreen">
+
+    <ImageView
+        android:id="@+id/imagem_Data"
+        android:layout_width="@dimen/width_image"
+        android:layout_height="@dimen/height_image"
+        android:src="@drawable/imc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtField_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imagem_Data"
+        android:layout_marginEnd="@dimen/margin_StartEnd"
+        android:layout_marginStart="@dimen/margin_StartEnd"
+        android:layout_marginTop="@dimen/topMargin"
+        android:hint="@string/nome"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtField_Altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtField_Name"
+        android:layout_marginEnd="@dimen/margin_StartEnd"
+        android:layout_marginStart="@dimen/margin_StartEnd"
+        android:layout_marginTop="@dimen/topMargin_txtField"
+        android:hint="@string/altura"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAltura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtField_Peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtField_Altura"
+        android:layout_marginEnd="@dimen/margin_StartEnd"
+        android:layout_marginStart="@dimen/margin_StartEnd"
+        android:layout_marginTop="@dimen/topMargin_txtField"
+        android:hint="@string/peso"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/calculateBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtField_Peso"
+        android:layout_marginTop="@dimen/topMargin"
+        android:layout_marginEnd="@dimen/margin_StartEndButton"
+        android:layout_marginStart="@dimen/margin_StartEndButton"
+        android:paddingBottom="@dimen/btPadding"
+        android:paddingTop="@dimen/btPadding"
+        android:text="@string/btText"
+        app:backgroundTint="@color/teal_700"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_StartEnd">16dp</dimen>
+    <dimen name="margin_StartEndButton">28dp</dimen>
+    <dimen name="width_image">80dp</dimen>
+    <dimen name="height_image">35dp</dimen>
+    <dimen name="btPadding">10dp</dimen>
+    <dimen name="topMargin">35dp</dimen>
+    <dimen name="topMargin_txtField">24dp</dimen>
+</resources>

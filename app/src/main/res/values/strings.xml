@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NAC1</string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
+    <string name="nome">Digite o seu nome</string>
+    <string name="txtInformation_Main">Hello World!</string>
+    <string name="btText">Calcular</string>
+    <string name="Error_msg">Campo está vazio e/ou inválido</string>
+    <string name="success">Calculando</string>
+</resources>
