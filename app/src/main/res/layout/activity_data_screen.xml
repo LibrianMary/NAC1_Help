@@ -39,7 +39,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtField_Altura"
+        android:id="@+id/txtField_Height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/txtField_Name"
@@ -51,7 +51,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtAltura"
+            android:id="@+id/txtHeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -62,7 +62,7 @@
         android:id="@+id/txtField_Peso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/txtField_Altura"
+        app:layout_constraintTop_toBottomOf="@id/txtField_Height"
         android:layout_marginEnd="@dimen/margin_StartEnd"
         android:layout_marginStart="@dimen/margin_StartEnd"
         android:layout_marginTop="@dimen/topMargin_txtField"

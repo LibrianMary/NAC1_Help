@@ -9,11 +9,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val information = intent.getParcelableExtra<Information>(DataScreen.Key_Intent_Information)
+        val user = intent.getParcelableExtra<User>(DataScreen.Key_Intent_User)
 
-        val informacao = findViewById<TextView>(R.id.txtView_Main)
-        informacao.text = "Nome: ${information?.name}\n" +
-                "Altura: ${information?.altura}\n" +
-                "Peso: ${information?.peso}"
+        val show = findViewById<TextView>(R.id.txtView_Main)
+        show.text = "Nome: ${user?.name}\n" +
+                "Altura: ${user?.height}\n" +
+                "Peso: ${user?.height}"
     }
 }
