@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NAC1">
-        <activity android:name=".INfo_Activity"></activity>
         <activity
             android:name=".Info_Activity"
             android:label="@string/title_activity_info"
-            android:theme="@style/Theme.NAC1.NoActionBar" />
+            android:theme="@style/Theme.NAC1.NoActionBar"></activity>
+        <activity android:name=".INfo_Activity" />
         <activity android:name=".DataScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

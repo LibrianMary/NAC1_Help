@@ -60,6 +60,8 @@ class DataScreen : AppCompatActivity() {
                     ).show()
                     startActivity(intent)
                 }
+
+
             }
         }
     }
