@@ -3,8 +3,6 @@ package com.example.nac1
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.util.Log
 import android.widget.Toast
 import com.example.nac1.databinding.ActivityDataScreenBinding
 
@@ -22,9 +20,10 @@ class DataScreen : AppCompatActivity() {
                 val name = txtName.text.toString()
                 val height = txtHeight.text.toString()
                 val weight = txtPeso.text.toString()
-                val intent = Intent(this@DataScreen, MainActivity::class.java)
 
                 var x = 0
+
+                val intent = Intent(this@DataScreen, MainActivity::class.java)
 
                 val user = User(
                     name = name,
@@ -61,7 +60,6 @@ class DataScreen : AppCompatActivity() {
                     ).show()
                     startActivity(intent)
                 }
-
             }
         }
     }

@@ -11,9 +11,13 @@ class MainActivity : AppCompatActivity() {
 
         val user = intent.getParcelableExtra<User>(DataScreen.Key_Intent_User)
 
+        val name = user?.name
+        val height = user?.height
+        val weight = user?.weight
+
         val show = findViewById<TextView>(R.id.txtView_Main)
-        show.text = "Nome: ${user?.name}\n" +
-                "Altura: ${user?.height}\n" +
-                "Peso: ${user?.height}"
+        show.text = "Nome: ${name}\n" +
+                "Altura: ${height}\n" +
+                "Peso: ${weight}\n"
     }
 }

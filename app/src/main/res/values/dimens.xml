@@ -7,4 +7,5 @@
     <dimen name="btPadding">10dp</dimen>
     <dimen name="topMargin">35dp</dimen>
     <dimen name="topMargin_txtField">24dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
