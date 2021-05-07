@@ -21,11 +21,6 @@ class DataScreen : AppCompatActivity() {
                 val height = txtHeight.text.toString()
                 val weight = txtPeso.text.toString()
 
-                val altura: Double = height.toDouble()
-                val peso: Double = weight.toDouble()
-
-                //val res: Double = peso/(altura*altura)
-
                 var x = 0
 
                 val intent = Intent(this@DataScreen, MainActivity::class.java)
@@ -34,7 +29,6 @@ class DataScreen : AppCompatActivity() {
                     name = name,
                     height = height,
                     weight = weight
-                    //resultado = res
                 )
 
                 intent.putExtra(Key_Intent_User, user)
@@ -66,6 +60,8 @@ class DataScreen : AppCompatActivity() {
                     ).show()
                     startActivity(intent)
                 }
+
+
             }
 
             binding.euBt.setOnClickListener {

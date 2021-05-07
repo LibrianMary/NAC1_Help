@@ -14,12 +14,19 @@ class MainActivity : AppCompatActivity() {
         val name = user?.name
         val height = user?.height
         val weight = user?.weight
-        //val resultado = user?.resultado
+
+        val peso = weight.toString()
+        val p: Double = peso.toDouble()
+
+        val altura = height.toString()
+        val a = altura.toDouble()
+
+        val imc = p/(a*a)
 
         val show = findViewById<TextView>(R.id.txtView_Main)
         show.text = "Nome: ${name}\n" +
                 "Altura: ${height}\n" +
-                "Peso: ${weight}\n"
-               // "IMC: ${resultado}"
+                "Peso: ${weight}\n" +
+                "IMC: ${imc}"
     }
 }

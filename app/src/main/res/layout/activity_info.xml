@@ -31,21 +31,51 @@
         />
 
     <TextView
-        android:id="@+id/info"
+        android:id="@+id/info1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/sallute"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/topMargin"
-        android:text="Meu nome"
+        android:layout_marginTop="20dp"
+        android:text="Eu sou a Maryana dos Santos, tenho 18 anos"
+        />
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Meus jogos preferidos são The Last of Us e Mutazione"
+        />
+
+    <TextView
+        android:id="@+id/info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Eeee to tentando seguir na área de Arte de Games :D"
+        />
+
+    <TextView
+        android:id="@+id/info4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="...ou talvez programação, programar também é legal"
         />
 
     <Button
         android:id="@+id/euBt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/info"
+        app:layout_constraintTop_toBottomOf="@id/info4"
         android:layout_marginEnd="120dp"
         android:layout_marginStart="120dp"
         app:layout_constraintStart_toStartOf="parent"
