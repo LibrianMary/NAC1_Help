@@ -13,7 +13,6 @@
             android:name=".Info_Activity"
             android:label="@string/title_activity_info"
             android:theme="@style/Theme.NAC1.NoActionBar"></activity>
-        <activity android:name=".INfo_Activity" />
         <activity android:name=".DataScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
